@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c-main: #16161a;
+    --c-main-2: #0d0d0f;
+    --c-header: #fffffe;
+    --c-para: #94a1b2;
+    --c-btn-text: #fffffe;
+    --c-btn-bg: #7f5af0;
+    --c-btn-bg-trans: #7f5af06f;
+}
+
+body {
+    background: #16161a;
+}
+
+h1,
+h2,
+h3,
+label {
+    font-size: 3rem;
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+
+    color: var(--c-header);
+}
+
+h2,
+h3 {
+    font-size: 1rem;
+}
+
+h3 {
+    color: var(--c-btn-bg);
+}
+
+p,
+button {
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+
+    color: var(--c-para);
+}
+
+button {
+    width: fit-content;
+
+    padding: 1rem;
+
+    color: var(--c-btn-text);
+    background: var(--c-btn-bg-trans);
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+
+    transition: 200ms ease-in-out;
+}
+
+button:hover {
+    background: var(--c-btn-bg);
+}
+
+button:active {
+    filter: brightness(2);
+    transition: none;
+}
+
+/* App
+================================================================ */
+.App,
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.room {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.room input {
+    font-size: 2rem;
+}
+
+/* Auth
+================================================================ */
+.auth {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Sign In/Out Buttons
+================================================================ */
+.sign-out {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
